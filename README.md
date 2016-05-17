@@ -5,7 +5,7 @@ Home: https://github.com/jedisct1/libsodium
 
 Package license: ISC
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: A modern and easy-to-use crypto library.
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/libsodium-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/libsodium-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/libsodium-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/libsodium-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/libsodium-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/libsodium-feedstock/branch/master)
