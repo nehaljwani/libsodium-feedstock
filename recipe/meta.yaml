@@ -1,4 +1,4 @@
-{% set version = "1.0.8" %}
+{% set version = "1.0.10" %}
 
 package:
   name: libsodium
@@ -7,11 +7,11 @@ package:
 source:
   fn: libsodium-{{ version }}.tar.gz
   url: https://github.com/jedisct1/libsodium/releases/download/{{ version }}/libsodium-{{ version }}.tar.gz
-  sha1: 3d53b827da88d6c2e391fb377bddcd592515ab79
+  sha1: f34f78330cf1a4f69acce5f3fc2ada2d4098c7f4
 
 build:
   skip: true    # [win]
-  number: 2
+  number: 0
 
 test:
   commands:
