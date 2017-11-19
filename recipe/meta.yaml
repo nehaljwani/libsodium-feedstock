@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [win and py>35]
-  number: 0
+  number: 1
   features:
     - vc9     # [win and py27]
     - vc10    # [win and py34]
@@ -34,6 +34,7 @@ test:
     - test -f ${PREFIX}/lib/libsodium.so         # [linux]
 
     - if not exist %LIBRARY_INC%\sodium.h              exit 1  # [win]
+    - if not exist %LIBRARY_INC%\sodium\version.h      exit 1  # [win]
     - if not exist %LIBRARY_BIN%\libsodium.dll         exit 1  # [win]
     - if not exist %LIBRARY_LIB%\libsodium.lib         exit 1  # [win]
     - if not exist %LIBRARY_LIB%\libsodium_static.lib  exit 1  # [win]

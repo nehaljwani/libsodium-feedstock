@@ -1,3 +1,5 @@
+@echo on
+
 if "%ARCH%" == "32" (
   set ARCH=Win32
 ) else (
@@ -23,6 +25,10 @@ if "%VS_YEAR%" == "2008" (
   cd /d %SRC_DIR%\builds\msvc\vs%VS_YEAR%\static
   msbuild libsodium.sln /p:Configuration=Release /p:Platform=%ARCH%
   if errorlevel 1 exit 1
+  :: Generate version.h
+  cd /d %SRC_DIR%
+  call msvc-scripts\process.bat
+  if errorlevel 1 exit 1
   set ARTIFACTS_DIR=%SRC_DIR%\bin\%ARCH%\Release\v90\
 ) else (
   cd /d %SRC_DIR%\builds\msvc\vs%VS_YEAR%\
@@ -40,5 +46,5 @@ if "%VS_YEAR%" == "2010" (
 move %ARTIFACTS_DIR%\dynamic\libsodium.dll %LIBRARY_BIN%
 move %ARTIFACTS_DIR%\dynamic\libsodium.lib %LIBRARY_LIB%
 move %ARTIFACTS_DIR%\static\libsodium.lib %LIBRARY_LIB%\libsodium_static.lib
-xcopy /s /y %SRC_DIR%\src\libsodium\include\sodium %LIBRARY_INC%\
+xcopy /s /y /i %SRC_DIR%\src\libsodium\include\sodium %LIBRARY_INC%\sodium
 xcopy /s /y %SRC_DIR%\src\libsodium\include\sodium.h %LIBRARY_INC%\
