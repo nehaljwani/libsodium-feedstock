@@ -333,11 +333,19 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\..\src\libsodium\crypto_core\curve25519\ref10\base.h"
+				RelativePath="..\..\..\..\src\libsodium\crypto_core\ed25519\ref10\fe_25_5\base.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\..\src\libsodium\crypto_core\curve25519\ref10\base2.h"
+				RelativePath="..\..\..\..\src\libsodium\crypto_core\ed25519\ref10\fe_51\base.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\libsodium\crypto_core\ed25519\ref10\fe_25_5\base2.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\libsodium\crypto_core\ed25519\ref10\fe_51\base2.h"
 				>
 			</File>
 			<File
@@ -405,6 +413,14 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\..\..\src\libsodium\crypto_core\ed25519\ref10\fe_25_5\constants.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\libsodium\crypto_core\ed25519\ref10\fe_51\constants.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\..\src\libsodium\crypto_scalarmult\curve25519\sandy2x\consts_namespace.h"
 				>
 			</File>
@@ -450,6 +466,10 @@
 			</File>
 			<File
 				RelativePath="..\..\..\..\src\libsodium\include\sodium\crypto_box_curve25519xsalsa20poly1305.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\libsodium\include\sodium\crypto_core_ed25519.h"
 				>
 			</File>
 			<File
@@ -537,6 +557,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\..\..\src\libsodium\include\sodium\crypto_scalarmult_ed25519.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\..\src\libsodium\crypto_pwhash\scryptsalsa208sha256\crypto_scrypt.h"
 				>
 			</File>
@@ -617,23 +641,31 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\..\src\libsodium\crypto_scalarmult\curve25519\donna_c64\curve25519_donna_c64.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\..\..\src\libsodium\include\sodium\private\curve25519_ref10.h"
-				>
-			</File>
-			<File
 				RelativePath="..\..\..\..\src\libsodium\crypto_scalarmult\curve25519\sandy2x\curve25519_sandy2x.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\..\src\libsodium\crypto_sign\ed25519\ref10\ed25519_ref10.h"
+				RelativePath="..\..\..\..\src\libsodium\include\sodium\private\ed25519_ref10.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\libsodium\include\sodium\private\ed25519_ref10_fe_25_5.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\libsodium\include\sodium\private\ed25519_ref10_fe_51.h"
 				>
 			</File>
 			<File
 				RelativePath="..\..\..\..\src\libsodium\include\sodium\export.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\libsodium\crypto_core\ed25519\ref10\fe_25_5\fe.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\libsodium\crypto_core\ed25519\ref10\fe_51\fe.h"
 				>
 			</File>
 			<File
@@ -741,6 +773,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\..\..\src\libsodium\crypto_sign\ed25519\ref10\sign_ed25519_ref10.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\..\src\libsodium\include\sodium.h"
 				>
 			</File>
@@ -757,11 +793,11 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\..\src\libsodium\crypto_stream\salsa20\xmm6int\u0.h"
+				RelativePath="..\..\..\..\src\libsodium\crypto_stream\chacha20\dolbeau\u0.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\..\src\libsodium\crypto_stream\chacha20\dolbeau\u0.h"
+				RelativePath="..\..\..\..\src\libsodium\crypto_stream\salsa20\xmm6int\u0.h"
 				>
 			</File>
 			<File
@@ -917,6 +953,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\..\..\src\libsodium\crypto_core\ed25519\core_ed25519.c"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\..\src\libsodium\crypto_core\hchacha20\core_hchacha20.c"
 				>
 			</File>
@@ -1001,15 +1041,11 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\..\src\libsodium\crypto_scalarmult\curve25519\donna_c64\curve25519_donna_c64.c"
-				>
-			</File>
-			<File
-				RelativePath="..\..\..\..\src\libsodium\crypto_core\curve25519\ref10\curve25519_ref10.c"
-				>
-			</File>
-			<File
 				RelativePath="..\..\..\..\src\libsodium\crypto_scalarmult\curve25519\sandy2x\curve25519_sandy2x.c"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\libsodium\crypto_core\ed25519\ref10\ed25519_ref10.c"
 				>
 			</File>
 			<File
@@ -1134,6 +1170,10 @@
 			</File>
 			<File
 				RelativePath="..\..\..\..\src\libsodium\crypto_scalarmult\curve25519\scalarmult_curve25519.c"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\libsodium\crypto_scalarmult\ed25519\ref10\scalarmult_ed25519_ref10.c"
 				>
 			</File>
 			<File
